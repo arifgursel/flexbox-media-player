@@ -1,6 +1,15 @@
 /*Make parent element a flex container*/
 ul {
+  list-style: none;
+  border: red solid 1px;
   display: flex; /*or inline-flex*/
+  flex-direction: row; /* row || column || row-reverse || column-reverse */
+  flex-wrap: nowrap; /* wrap || nowrap || wrap-reverse */
+  /* Flex Flow is direction + wrap shorthand , so direction = row and wrap = wrap is:*/
+  /*flex-flow: row wrap; */
+  /*flex-flow: row nowrap;*/
+  /*flex-flow: column wrap;*/
+  /*flex-flow: column nowrap;*/
 }
 
 li {
